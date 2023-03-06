@@ -18,9 +18,9 @@ spec:
     spec:
       containers:
         - name: container
-          image: 'nginxinc/nginx-unprivileged:latest'
+          image: 'nginx:latest'
           ports:
-            - containerPort: 8080
+            - containerPort: 80
               protocol: TCP
   strategy:
     type: RollingUpdate
