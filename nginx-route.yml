@@ -11,5 +11,5 @@ spec:
     name: nginx-test
     weight: 100
   port:
-    targetPort: nginx-http
+    targetPort: 8080
   wildcardPolicy: None
