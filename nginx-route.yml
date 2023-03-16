@@ -1,0 +1,15 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: nginx-test
+  namespace: pers-zubkov
+  labels:
+    app: nginx-test
+spec:
+  to:
+    kind: Service
+    name: nginx-test
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
