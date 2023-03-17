@@ -10,7 +10,7 @@ spec:
     termination: edge
   to:
     kind: Service
-    name: nginx-test
+    name: nginx-http
     weight: 100
   port:
     targetPort: 8080
