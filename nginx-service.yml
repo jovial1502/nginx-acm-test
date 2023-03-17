@@ -4,7 +4,6 @@ metadata:
   name: nginx-test
   namespace: pers-zubkov
 spec:
-  type: NodePort
   ports:
     - name: nginx-http
       protocol: TCP
