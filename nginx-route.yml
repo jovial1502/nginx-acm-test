@@ -6,6 +6,8 @@ metadata:
   labels:
     app: nginx-test
 spec:
+  tls:
+    termination: edge
   to:
     kind: Service
     name: nginx-test
